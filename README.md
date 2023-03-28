@@ -26,3 +26,13 @@ the entire VQS. The requirements of this VQS may be satisfied through formal tra
 
 If you have any questions or are unable to locate references, contact your mentor or qualifier. Good
 Luck!
+
+# About
+
+The tech stack that will be utilized in this project will be [Next.js](https://nextjs.org/docs/getting-started) and [*typescript*](https://www.typescriptlang.org/docs/).
+
+## Questions
+
+If you have any questions, please feel free to contact me on my [LinkedIn Page](https://www.linkedin.com/in/robecampbelljr/).
+
+
