@@ -1,0 +1,157 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: var(--text-color);
+  background-color: var(--border-color);
+}
+
+:root {
+  --main-color: #393646;
+  --secondary-color: #4F4557;
+  --border-color: #6D5D6E;
+  --text-color: #F4EEE0;
+  --light-secondary-color: #FFFFE8;
+  --dark-secondary-color: #4F4557;
+}
+
+.dark {
+  --main-color: #393646;
+  --secondary-color: #4F4557;
+  --terciary-color: #463d4d;
+  --border-color: #6D5D6E;
+  --text-color: #F4EEE0;
+}
+
+.light {
+  --main-color: #FFD4D4;
+  --secondary-color: #FFFFE8;
+  --terciary-color: #cfcfb4;
+  --border-color: #e1f5b8;
+  --text-color: rgb(71, 71, 71);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: var(--main-color);
+  text-align: center;
+  position: fixed;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  position: absolute;
+  width: 100px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+nav ul li {
+  display: none;
+  z-index: 1;
+  width: 97%;
+  text-align: left;
+  border-radius: 5px;
+  padding-left: 5px;;
+}
+
+nav ul:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav ul:hover li{
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: var(--border-color);
+  font-weight: bolder;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.toggle-switch input[type=checkbox] {
+  display: none;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background-color: var(--light-secondary-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-switch input[type=checkbox]:checked + .toggle-slider {
+  background-color: var(--dark-secondary-color);
+}
+
+.toggle-img {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.first {
+  width: 88%;
+  min-height: 45%;
+  background-color: var(--secondary-color);
+}
+
+.form-section {
+  width: 88%;
+  min-height: 45%;
+  background-color: var(--terciary-color);
+}
+
