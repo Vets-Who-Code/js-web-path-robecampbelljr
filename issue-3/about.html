@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Issue #3</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="./style.css" />
     <script>
       document.documentElement.className = localStorage.getItem('theme');
@@ -19,25 +19,16 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="title">Issue #3</div>
-        <!-- Having Problems with this toggle-switch. Need to save the checkbox status to localstorage, then have it pull the status from the box from localStorage -->
+        <div class="title">About Me</div>
         <label class="toggle-switch">
           <input type="checkbox" onclick="toggleTheme()">
           <span class="toggle-slider"></span>
-          <img id="toggle-img" class="toggle-img" src="" alt="">
+          <img id="toggle-img" class="toggle-img" src="" alt="Light Mode">
           <script>
             setThemePic(document.documentElement.className);
           </script>
         </label>
       </header>
-      <section class="first">
-        <script>setFirstSection()</script>
-        paragraphs go here
-      </section>
-      <hr>
-      <section class="form-section">
-        form goes here
-      </section>
       <footer>Footer here</footer>
     </div>
   </body>

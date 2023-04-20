@@ -53,7 +53,7 @@ header {
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: 20px;
 }
 
@@ -101,7 +101,7 @@ nav ul li:hover {
 }
 
 footer {
-  height: 50px;
+  min-height: 60px;
   width: 100%;
   background-color: var(--main-color);
 }
@@ -111,7 +111,7 @@ footer {
   display: inline-block;
   width: 50px;
   height: 25px;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-right: 20px;
 }
 
@@ -143,15 +143,24 @@ footer {
   height: 20px;
 }
 
+.toggle-img:hover {
+  cursor: pointer;
+}
+
 .first {
   width: 88%;
-  min-height: 45%;
+  min-height: 43%;
   background-color: var(--secondary-color);
 }
 
 .form-section {
   width: 88%;
-  min-height: 45%;
+  min-height: 43%;
   background-color: var(--terciary-color);
+}
+
+hr {
+  width: 97%;
+  color: var(--border-color);
 }
 

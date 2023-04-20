@@ -14,7 +14,7 @@ function setThemePic(themeName) {
   let toggleImg = document.getElementById('toggle-img');
 
   if (themeName === 'dark') {
-    toggleImg.src = './pics/light.png';
+    toggleImg.src = './pics/sun.png';
     toggleImg.alt = 'Light Mode';
   } else if (themeName === 'light') {
     toggleImg.src = './pics/dark.png';
@@ -24,10 +24,10 @@ function setThemePic(themeName) {
 
 function toggleTheme() {
   if (localStorage.getItem('theme') === 'dark') {
-      setTheme('light');
-      setThemePic('light');
+    setTheme('light');
+    setThemePic('light');
   } else {
-      setTheme('dark');
-      setThemePic('dark');
+    setTheme('dark');
+    setThemePic('dark');
   }
 }
