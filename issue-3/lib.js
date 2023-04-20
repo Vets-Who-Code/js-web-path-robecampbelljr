@@ -1,16 +1,16 @@
-function setFirstSection() {
+let setFirstSection = () => {
   const header = document.querySelector('header');
   const body = document.querySelector('.first');
   const headerHeight = header.offsetHeight;
   body.style.marginTop = `${headerHeight}px`;
 }
 
-function setTheme(themeName) {
+let setTheme = (themeName) => {
   localStorage.setItem('theme', themeName);
   document.documentElement.className = themeName;
 }
 
-function setThemePic(themeName) {
+let setThemePic = (themeName) => {
   let toggleImg = document.getElementById('toggle-img');
 
   if (themeName === 'dark') {
@@ -22,7 +22,19 @@ function setThemePic(themeName) {
   }
 }
 
-function toggleTheme() {
+let setCheckBox = () => {
+  let currentTheme = document.documentElement.className;
+  let box = document.getElementById('theme-toggle');
+
+  if (currentTheme === 'dark') {
+    box.checked = null;
+  } else {
+    box.checked = true;
+  }
+
+}
+
+let toggleTheme = () => {
   if (localStorage.getItem('theme') === 'dark') {
     setTheme('light');
     setThemePic('light');

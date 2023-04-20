@@ -20,13 +20,13 @@
           </ul>
         </nav>
         <div class="title">Issue #3</div>
-        <!-- Having Problems with this toggle-switch. Need to save the checkbox status to localstorage, then have it pull the status from the box from localStorage -->
         <label class="toggle-switch">
-          <input type="checkbox" onclick="toggleTheme()">
+          <input id="theme-toggle" type="checkbox" onclick="toggleTheme()">
           <span class="toggle-slider"></span>
           <img id="toggle-img" class="toggle-img" src="" alt="">
           <script>
             setThemePic(document.documentElement.className);
+            setCheckBox();
           </script>
         </label>
       </header>
