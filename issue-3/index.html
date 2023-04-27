@@ -46,7 +46,7 @@
           <input type="text" id="li3" name="checklist">
           <button onclick="saveGoal()">Submit</button>
         </form>
-        <table>
+        <table id="goalTable">
           <caption>Personal Goals</caption>
           <thead>
             <tr>
@@ -94,6 +94,9 @@
 
           </tfoot>
         </table>
+        <script>
+          setTable();
+        </script>
       </section>
       <br>
       <footer>Footer here</footer>
