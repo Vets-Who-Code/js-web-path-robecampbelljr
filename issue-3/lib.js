@@ -151,14 +151,34 @@ let setTable = () => {
   if (savedGoals !== null) {
     savedGoals.forEach((goal) => {
       let newRow = table.insertRow();
-      let goa = newRow.insertCell();
-      let des = newRow.insertCell();
-      let checklist = newRow.insertCell();
+      let goaCell = newRow.insertCell();
+      let desCell = newRow.insertCell();
+      let checklistCell = newRow.insertCell();
 
-      goa.innerHTML = goal.goa;
-      des.innerHTML = goal.des;
+      goaCell.innerHTML = goal.goa;
+      desCell.innerHTML = goal.des;
 
+      let newChecklist = document.createElement('ul');
+
+      if (goal.li1 !== '') {
+        let li1 = document.createElement('li');
+        li1.innerText = goal.li1;
+        newChecklist.appendChild(li1);
+      }
+
+      if (goal.li2 !== '') {
+        let li2 = document.createElement('li');
+        li2.innerText = goal.li2;
+        newChecklist.appendChild(li2);
+      }
+
+      if (goal.li3 !== '') {
+        let li3 = document.createElement('li');
+        li3.innerText = goal.li3;
+        newChecklist.appendChild(li3);
+      }
+
+      checklistCell.appendChild(newChecklist);
     })
   }
-
 }
