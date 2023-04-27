@@ -17,17 +17,19 @@ body {
 .dark {
   --main-color: #393646;
   --secondary-color: #4F4557;
-  --terciary-color: #463d4d;
+  --tertiary-color: #463d4d;
   --border-color: #6D5D6E;
   --text-color: #F4EEE0;
+  --link-color: #fdde95;
 }
 
 .light {
   --main-color: #FFD4D4;
   --secondary-color: #FFFFE8;
-  --terciary-color: #cfcfb4;
+  --tertiary-color: #cfcfb4;
   --border-color: #e1f5b8;
   --text-color: rgb(71, 71, 71);
+  --link-color: blue;
 }
 
 .app {
@@ -98,6 +100,7 @@ nav ul:hover li{
 nav ul li:hover {
   background-color: var(--border-color);
   font-weight: bolder;
+  cursor: pointer;
 }
 
 footer {
@@ -154,13 +157,48 @@ footer {
 }
 
 .form-section {
+  display: flex;
+  justify-content: space-evenly;
   width: 88%;
-  min-height: 43%;
-  background-color: var(--terciary-color);
+  background-color: var(--tertiary-color);
+  padding-bottom: 30px;
 }
 
 hr {
   width: 97%;
   color: var(--border-color);
+}
+
+section {
+  padding-left: 10px;
+}
+
+td:nth-child(1) {
+  width: 150px;
+  padding-left: 10px;
+}
+
+td:nth-child(2) {
+  width: 200px;
+  text-align: center;
+}
+
+td:nth-child(3) {
+  width: 200px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+table {
+  margin-top: 20px;
+  border: 1px solid var(--border-color);
+}
+
+form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 

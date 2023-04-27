@@ -9,7 +9,7 @@
     </script>
   </head>
   <body>
-    <script src="./lib.js"></script>
+    <script type="text/javascript" src="./lib.js"></script>
     <div class="app">
       <header>
         <nav>
@@ -32,12 +32,70 @@
       </header>
       <section class="first">
         <script>setFirstSection()</script>
-        paragraphs go here
       </section>
       <hr>
       <section class="form-section">
-        form goes here
+        <form>
+          <label for="goal">New Goal</label>
+          <input type="text" id="goal" name="goal">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="5" cols="15"></textarea>
+          <label for="checklist">Checklist</label>
+          <input type="text" id="li1" name="checklist">
+          <input type="text" id="li2" name="checklist">
+          <input type="text" id="li3" name="checklist">
+          <button onclick="saveGoal()">Submit</button>
+        </form>
+        <table>
+          <caption>Personal Goals</caption>
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Description</th>
+              <th>Checklist</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Family D&D Game</td>
+              <td>Dungeons and Dragons (D&D) is a tabletop role-playing game involving storytelling, strategy, and imagination. </td>
+              <td>
+                <ul>
+                  <li>Create story outline</li>
+                  <li>Family create <a href="https://www.dndbeyond.com/characters">characters</a></li>
+                  <li>Create <a href="https://www.dndbeyond.com/encounter-builder">encounters</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Bee Keeping</td>
+              <td>The ability to keep bees domestically and harvest honey year over year</td>
+              <td>
+                <ul>
+                  <li>Build <a href="https://horizontalhive.com/how-to-build/layens-swarm-trap-plans.shtml">swarm traps</a> and six <a href="https://horizontalhive.com/how-to-build/layens-hive-frame-plans.shtml">Laynes Frames</a></li>
+                  <li>Set up traps</li>
+                  <li>Build <a href="https://horizontalhive.com/how-to-build/insulated-layens-hive.shtml">Layens Hive</a> and twenty <a href="https://horizontalhive.com/how-to-build/layens-hive-frame-plans.shtml">Laynes Frames</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Build Chicken Coop</td>
+              <td>Domestically raising chickens to provide eggs for family</td>
+              <td>
+                <ul>
+                  <li>Build chicken coop</li>
+                  <li>Build chicken roost</li>
+                  <li>Note: Must have minimum 10sqft available per chicken</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+        </table>
       </section>
+      <br>
       <footer>Footer here</footer>
     </div>
   </body>
