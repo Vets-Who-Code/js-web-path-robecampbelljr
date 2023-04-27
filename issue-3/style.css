@@ -104,6 +104,9 @@ nav ul li:hover {
 }
 
 footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   min-height: 60px;
   width: 100%;
   background-color: var(--main-color);
@@ -151,6 +154,8 @@ footer {
 }
 
 .first {
+  display: flex;
+  justify-content: space-evenly;
   width: 88%;
   min-height: 43%;
   background-color: var(--secondary-color);
@@ -194,11 +199,24 @@ a {
 table {
   margin-top: 20px;
   border: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 
 form {
   margin-top: 25px;
+  border: 2px solid var(--border-color);
+  padding: 25px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  border-radius: 10px;
 }
 
+p {
+  width: 300px;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+}
