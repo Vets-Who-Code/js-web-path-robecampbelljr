@@ -1,6 +1,3 @@
-const email = 'robecampbelljr@gmail.com';
-
-
 let setFirstSection = () => {
   const header = document.querySelector('header');
   const body = document.querySelector('.first');
