@@ -30,6 +30,7 @@ body {
 
 img {
   width: 80%;
+  max-height: 75vh;
   margin: 0 10% 20px 10%;
   animation: zoomInFadeIn 1s ease-in-out;
 }
