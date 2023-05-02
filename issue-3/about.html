@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      document.documentElement.className = localStorage.getItem('theme');
+    </script>
+  </head>
+  <body>
+    <script src="./lib.js"></script>
+    <div class="app">
+      <header>
+        <nav>
+          <ul> Menu
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </nav>
+        <div class="title">About Me</div>
+        <label class="toggle-switch">
+          <input id="theme-toggle" type="checkbox" onclick="toggleTheme()">
+          <span class="toggle-slider"></span>
+          <img id="toggle-img" class="toggle-img" src="" alt="Light Mode">
+          <script>
+            setThemePic(document.documentElement.className);
+            setCheckBox();
+          </script>
+        </label>
+      </header>
+      <footer>Footer here</footer>
+    </div>
+  </body>
+</html>

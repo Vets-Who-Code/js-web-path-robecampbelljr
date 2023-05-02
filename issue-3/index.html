@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <title>Issue #3</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      document.documentElement.className = localStorage.getItem('theme');
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript" src="./lib.js"></script>
+    <div class="app">
+      <header>
+        <nav>
+          <ul> Menu
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="title">Issue #3</div>
+        <label class="toggle-switch">
+          <input id="theme-toggle" type="checkbox" onclick="toggleTheme()">
+          <span class="toggle-slider"></span>
+          <img id="toggle-img" class="toggle-img" src="" alt="">
+          <script>
+            setThemePic(document.documentElement.className);
+            setCheckBox();
+          </script>
+        </label>
+      </header>
+      <section class="first">
+        <script>setFirstSection()</script>
+        <p>Goal setting is the process of defining targets or objectives that one intends to achieve within a specific time frame. <strong>Setting SMART goals</strong>, which are specific, measurable, achievable, relevant, and time-bound, can increase the chances of success. A good starting point is to identify what you want to achieve and why, and then break down the goal into smaller, more manageable steps. <strong>Visualizing success</strong> and regularly reviewing progress can help to stay motivated and focused. Setting goals can lead to a sense of direction and purpose, and <a href="https://en.wikipedia.org/wiki/Motivation">motivate</a> people to work towards their aspirations. It can also promote personal growth and development, improve performance, and increase satisfaction and happiness.</p>
+        <p>Use the form below to add another goal to the goal list. All fileds will <em>only accept</em> alpha numeric characters with the exception of the description field; it will accept basic punctuation.</p>
+      </section>
+      <hr />
+      <section class="form-section">
+        <form>
+          <label for="goal">New Goal</label>
+          <input type="text" id="goal" name="goal">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="5" cols="15"></textarea>
+          <label for="checklist">Checklist</label>
+          <input type="text" id="li1" name="checklist">
+          <input type="text" id="li2" name="checklist">
+          <input type="text" id="li3" name="checklist">
+          <button onclick="saveGoal()">Submit</button>
+        </form>
+        <table id="goalTable">
+          <caption>Personal Goals</caption>
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Description</th>
+              <th>Checklist</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Family D&D Game</td>
+              <td>Dungeons and Dragons (D&D) is a tabletop role-playing game involving storytelling, strategy, and imagination. </td>
+              <td>
+                <ul>
+                  <li>Create story outline</li>
+                  <li>Family create <a href="https://www.dndbeyond.com/characters">characters</a></li>
+                  <li>Create <a href="https://www.dndbeyond.com/encounter-builder">encounters</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Bee Keeping</td>
+              <td>The ability to keep bees domestically and harvest honey year over year</td>
+              <td>
+                <ul>
+                  <li>Build <a href="https://horizontalhive.com/how-to-build/layens-swarm-trap-plans.shtml">swarm traps</a> and six <a href="https://horizontalhive.com/how-to-build/layens-hive-frame-plans.shtml">Laynes Frames</a></li>
+                  <li>Set up traps</li>
+                  <li>Build <a href="https://horizontalhive.com/how-to-build/insulated-layens-hive.shtml">Layens Hive</a> and twenty <a href="https://horizontalhive.com/how-to-build/layens-hive-frame-plans.shtml">Laynes Frames</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Build Chicken Coop</td>
+              <td>Domestically raising chickens to provide eggs for family</td>
+              <td>
+                <ul>
+                  <li>Build chicken coop</li>
+                  <li>Build chicken roost</li>
+                  <li>Note: Must have minimum 10sqft available per chicken</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+        <script>
+          setTable();
+        </script>
+      </section>
+      <br />
+      <footer>
+        <a href="https://www.linkedin.com/in/robecampbelljr/"><img class="social" src="./pics/LI-In-Bug.png"></a>
+        <a href="https://twitter.com/robecampbelljr"><img class="social" src="./pics/twitter.png"></a>
+      </footer>
+    </div>
+  </body>
+</html>
