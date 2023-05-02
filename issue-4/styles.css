@@ -42,15 +42,19 @@ img {
 }
 
 .bottom__button {
+  height: 80px;
+  width: 80px;
   margin: 0 calc(16vw - 25px) 0 calc(16vw - 25px);
   padding: 10px 20px 10px 20px;
   box-shadow: 2.5px 2.5px 8px 2.5px rgb(89, 80, 80);
   background-color: green;
   border-radius: 5px;
+  transition: border-radius .2s ease-in;
 }
 
 .bottom__button:hover {
   cursor: pointer;
+  border-radius: 20%;
 }
 
 .bottom__button:active {
@@ -85,6 +89,17 @@ img {
   .top__section {
     width: 100%;
   }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bottom__button {
+      margin-bottom: 20px;
+      width: 60%;
+    }
 }
 
 @keyframes slideInTToB {
