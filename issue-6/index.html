@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <script type="text/javascript" src="/issue-6/lib.js"></script>
+  </head>
+  <body>
+    <script>
+      // Assign an array of 5 random numbers to a variable
+      let numbers = generateArray();
+      // Assign a number to a variable and call it counter
+      let counter = 1;
+      // Use a for loop to iterate through the array and add the counter to each item in the array
+      for (let i = 0; i < numbers.length; i++) {
+        numbers[i] += counter;
+        // On each iteration add 1 to the counter
+        counter++;
+      }
+
+      // Call the above function with the previously assigned array variable as a parameter
+      logArray(numbers);
+
+      // Call the above function with a new array with 5 random numbers
+      logArray(generateArray());
+
+      // Delete the third item of the saved array
+      numbers.slice(2, 1);
+
+      // Add a string to the front of the saved array
+      numbers.unshift('Hello');
+      // Add a string to the end of the saved array
+      numbers.push('World!')
+      // console.log the saved array
+      console.log(numbers)
+
+
+    </script>
+  </body>
+</html>
