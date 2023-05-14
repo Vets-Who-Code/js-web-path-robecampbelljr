@@ -14,7 +14,19 @@ ul {
   margin: 20px;
 }
 
+li:hover {
+  cursor: pointer;
+}
+
 section {
   display: flex;
   justify-content: space-evenly;
+}
+
+.background-aqua {
+  background-color: aqua;
+}
+
+.background-bisque {
+  background-color: bisque;
 }
