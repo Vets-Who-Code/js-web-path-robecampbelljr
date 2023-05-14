@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  width: 200px;
+  height: auto;
+}
+
+ul {
+  width: 400px;
+  height: auto;
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
