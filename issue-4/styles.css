@@ -75,7 +75,7 @@ img {
   background-color: blue;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .top__section {
     width: calc(50% - 10px);
   }
@@ -86,7 +86,7 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .top__section {
     width: 100%;
   }
